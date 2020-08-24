@@ -10,6 +10,6 @@ public class HelloController {
     @RequestMapping(value = "")
     @ResponseBody
     public String index(){
-        return "Hello World!";
+        return "Hello World! Welcome to Virtual Learning Resources! ";
     }
 }

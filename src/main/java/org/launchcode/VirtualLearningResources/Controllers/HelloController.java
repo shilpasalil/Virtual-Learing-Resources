@@ -12,4 +12,11 @@ public class HelloController {
     public String index(){
         return "Hello World! Welcome to Virtual Learning Resources! ";
     }
+
+    @RequestMapping(value = "thankyou")
+    @ResponseBody
+    public String thankyou(){
+        return "Thank you for visiting Virtual Learning Resources! ";
+    }
+
 }

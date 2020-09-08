@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head th:fragment = "head">
+    <meta charset="UTF-8"/>
+    <link th:href=""@{css/>bootstrap.css}" rel="stylesheet" />
+    <script type="text/javascript" th:src = "@{/js/bootstrap.js}"></script>
+
+    <title th:text = "'Virtual Learning Resources' +${title == null ? : '::' + title}">VirtualLearningResources</title>
+</head>
+<body>
+<div th:fragment = "page-header" class = "navbar navbar-inverse navbar-fixed-top">
+    <div class=" container">
+        <div class=""navbar-header">
+        <a th:href="@{/>}" class = "navbar-brand">VirtualLearningResources</a>
+        </div>
+    <div class ="navbar-collapse collapse">
+        <ul class = "nav navbar-nav">
+            <li>Student</li>
+            <li>Teacher</li>
+            <li>Parent</li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

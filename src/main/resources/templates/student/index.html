@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head th:replace = "fragments :: head">
+    <meta charset="UTF-8"/>
+    <title></title>
+</head>
+<body>
+
+<div th:replace = "fragment :: page-header"></div>
+    <h1 th:text="${title}">Virtual Learning Resources</h1>
+<div  class="container body-content">
+<h2 th:text="${title}">Student Dashboard</h2>
+    <ul>
+        <li><a th:href="@{'/student/LogIn'}">Student Log In</a></li>
+        <li><a href="@{'/student/SignUp'}">New Student Sign Up</a></li>
+        <li><a href="@{'/student/view' + ${student.id}}" th:text="${student.name"}>Student view</a></li>
+        <li><a href="@{'/logout'}">Log out</a></li>
+    </ul>
+</div>
+
+
+</body>
+</html>

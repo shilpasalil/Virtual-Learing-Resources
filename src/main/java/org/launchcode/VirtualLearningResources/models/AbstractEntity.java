@@ -1,10 +1,13 @@
 package org.launchcode.VirtualLearningResources.models;
+
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
 import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.size;
+import javax.validation.constraints.Size;
 import java.util.Objects;
+
+//import javax.validation.constraints.size;
 
 @MappedSuperclass
 

@@ -8,9 +8,9 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.util.List;
 
-
 @Entity
-public class Student extends AbstractEntity {
+public class Parent extends AbstractEntity{
+
     @NotNull
     @NotBlank
     @Size(min = 8, max =20, message = "Invalid username. Must be between 8 to 20 characters")
@@ -21,20 +21,10 @@ public class Student extends AbstractEntity {
     @Size(min = 8, max =20, message = "Invalid password. Must be between 8 to 20 characters")
     private String password;
 
-    private String verifyPassword;
-
-
-    @NotNull
-    private char grade;
-
     @ManyToMany
-    private List<Teacher> teachers;
+    private List<Student> students;
 
-    @ManyToMany
-    private List<Parent> parents;
-
-    public Student() {}
-
+    public Parent() {}
 
     public String getUsername() {
         return username;
@@ -44,17 +34,8 @@ public class Student extends AbstractEntity {
         return password;
     }
 
-    public char getGrade() {
-        return grade;
-    }
-
-    public List<Teacher> getTeachers() {
-        return teachers;
-    }
-
-
-    public List<Parent> getParents() {
-        return parents;
+    public List<Student> getStudents() {
+        return students;
     }
 
     public void setUsername(String username) {
@@ -65,24 +46,9 @@ public class Student extends AbstractEntity {
         this.password = password;
     }
 
-    public void setGrade(char grade) {
-        this.grade = grade;
+    public void setStudents(List<Student> students) {
+        this.students = students;
     }
 
-    public void setTeachers(List<Teacher> teachers) {
-        this.teachers = teachers;
-    }
 
-    public void setParents(List<Parent> parents) {
-        this.parents = parents;
-    }
-
-    public String getVerifyPassword() {
-        return verifyPassword;
-    }
-
-    public void setVerifyPassword(String verifyPassword) {
-        this.verifyPassword = verifyPassword;
-    }
 }
-

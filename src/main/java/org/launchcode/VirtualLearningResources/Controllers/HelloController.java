@@ -1,13 +1,11 @@
 package org.launchcode.VirtualLearningResources.Controllers;
 
-import org.launchcode.VirtualLearningResources.models.Student;
 import org.launchcode.VirtualLearningResources.models.data.ParentRepository;
 import org.launchcode.VirtualLearningResources.models.data.StudentRepository;
 import org.launchcode.VirtualLearningResources.models.data.TeacherRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -28,20 +26,21 @@ public class HelloController {
     //@GetMapping
     public String index(Model model){
 
-        model.addAttribute("title", "User");
+        model.addAttribute("title", "Are you a Student or a Teacher or a Parent?");
         return "index";
 //        return "Hello World! Welcome to Virtual Learning Resources! ";
     }
 
-    @GetMapping("signupStudent")
+    //@GetMapping("student/index")
+/*    @RequestMapping("student/index")
     public String displaySignupForm(Model model){
         model.addAttribute("title", "Add Student" );
         model.addAttribute(new Student());
         model.addAttribute("teachers", teacherRepository.findAll());
         model.addAttribute("parents", parentRepository.findAll());
-        return "student/signup";
+        return "student/index";
     }
-
+*/
    // @PostMapping("newStudent")
 
 

@@ -9,25 +9,25 @@ As a concerned parent who is figuring out virtual learning for school going kids
 
 ### Features
 - User Sign Up new account:  
-      - Students sign up
-      - Parents sign up
-      - Teachers sign up
+  - Students sign up
+  - Parents sign up
+  - Teachers sign up
 - sign in to existing account
-      - Student login
-      - Parents login
-      - Teachers login
+  - Student login
+  - Parents login
+  - Teachers login
 - Create resources : 
-      - teachers can create lesson plans by grade level and subjects
-      - remove resources
-      - edit resources
+  - teachers can create lesson plans by grade level and subjects
+  - remove resources
+  - edit resources
 - Search capability : all users can search based on
-      - grade level
-      - subjects
-      - teachers
-      - students
+  - grade level
+  - subjects
+  - teachers
+  - students
 - Interactive sessions to promote communication : 
-      - users can post requests while they are logged in
-      - Ability to create and manage 'Help Pods' to facilitate small group discussions and study sessions
+  - users can post requests while they are logged in
+  - Ability to create and manage 'Help Pods' to facilitate small group discussions and study sessions
 
 ### Technologies
 - Java
